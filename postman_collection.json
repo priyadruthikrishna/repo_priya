@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "EMR Project Collection",
+    "_postman_id": "emr-sample-collection",
+    "description": "Basic requests for the Emergency Patient Health Record prototype",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register Doctor",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Dr. Example\",\n  \"email\": \"doc@example.com\",\n  \"password\": \"password123\",\n  \"role\": \"doctor\",\n  \"hospital\": \"Example Hospital\"\n}"
+        },
+        "url": { "raw": "http://localhost:5000/api/auth/register", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","auth","register"] }
+      }
+    },
+    {
+      "name": "Login Doctor",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"doc@example.com\",\n  \"password\": \"password123\"\n}"
+        },
+        "url": { "raw": "http://localhost:5000/api/auth/login", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","auth","login"] }
+      }
+    },
+    {
+      "name": "Register Patient",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\":\"Test Patient\",\n  \"dob\":\"2000-01-01\",\n  \"aadhaar\":\"123412341234\",\n  \"idNumber\":\"PAT-001\",\n  \"medicalData\": { \"medications\": [\"paracetamol\"], \"pastSurgeries\": [] },\n  \"emergencyFields\": {\"bloodGroup\":\"B+\",\"allergies\":\"None\",\"emergencyContactName\":\"Parent\",\"emergencyContactPhone\":\"9999999999\"}\n}"
+        },
+        "url": { "raw": "http://localhost:5000/api/patients/register", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","patients","register"] }
+      }
+    },
+    {
+      "name": "Emergency access (by qrToken)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://localhost:5000/api/emergency/<qrToken>", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","emergency","<qrToken>"] }
+      }
+    },
+    {
+      "name": "Get full patient (doctor)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer <token>" }
+        ],
+        "url": { "raw": "http://localhost:5000/api/patients/<patientId>/full", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api","patients","<patientId>","full"] }
+      }
+    }
+  ]
+}
