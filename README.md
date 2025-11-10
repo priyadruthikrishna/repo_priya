@@ -276,7 +276,7 @@ npm run dev
 
 📜 License
 
-GNU License © 2025
+GPL-3.0 License © 2025
 Team ByteBrigade — Naveen Kumar B, Priya K, Yashwin Gowda K, Shalini M G
 
 ---
