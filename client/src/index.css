@@ -1,0 +1,8 @@
+body { margin: 0; padding: 12px; font-family: Inter, Arial, sans-serif; background: #f3f6f9; color: #111; }
+.container { max-width: 1100px; margin: 0 auto; }
+.card { background: white; padding: 16px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+input, button, textarea { padding: 8px; margin: 6px 0; width: 100%; box-sizing: border-box; }
+button { cursor: pointer; }
+.flex { display:flex; gap:20px; }
+.col { flex:1; }
+.small { width:120px; display:inline-block; }
