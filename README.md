@@ -13,8 +13,8 @@ This system ensures **quick**, **secure**, and **role-based** access to critical
 | Name | Role |
 |------|------|
 | **Naveen Kumar B** | Backend Developer / Encryption & QR Logic |
-| **Priya K** | Frontend Developer / React UI Integration |
 | **Yashwin Gowda K** | Database & API Management |
+| **Priya K** | Frontend Developer / React UI Integration |
 | **Shalini M G** | Documentation & Testing |
 
 ---
@@ -277,7 +277,7 @@ npm run dev
 📜 License
 
 GPL-3.0 License © 2025
-Team ByteBrigade — Naveen Kumar B, Priya K, Yashwin Gowda K, Shalini M G
+Team ByteBrigade — Naveen Kumar B, Yashwin Gowda K, Priya K, Shalini M G
 
 ---
 
