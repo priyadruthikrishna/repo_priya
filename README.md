@@ -12,8 +12,8 @@ This system ensures **quick**, **secure**, and **role-based** access to critical
 
 | Name | Role |
 |------|------|
-| **Naveen Kumar B** | Team Lead |
-| **Yashwin Gowda K** | Database & API Management Backend Developer / Encryption & QR Logic |
+| **Naveen Kumar B** | Team Lead , Database & API Management |
+| **Yashwin Gowda K** |  Backend Developer / Encryption & QR Logic |
 | **Priya K** | Frontend Developer / React UI Integration |
 | **Shalini M G** | Documentation & Testing |
 
