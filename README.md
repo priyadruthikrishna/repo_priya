@@ -244,9 +244,9 @@ Cloud-based backup system
 
 Name	Role	Responsibility
 
-Naveen Kumar B	Team Lead / Backend	Node.js, Express, Encryption, QR Logic
+Naveen Kumar B	Team Lead /   Database	MongoDB, Schema Design, Data Flow
 Priya K	Frontend	React UI, Patient Registration, Styling
-Yashwin Gowda K	Database	MongoDB, Schema Design, Data Flow
+Yashwin Gowda K	Backend	Node.js ,Express,Encryption, QR Logic
 Shalini M G	QA & Docs	Testing, Documentation, Presentation
 
 
